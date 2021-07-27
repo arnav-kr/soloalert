@@ -2,19 +2,28 @@
  * SoloAlert.js
  * A customizable lightweight Alert Library with Material UI and awesome features.
  * 2021-07-27
- * A library by Skippet, https://github.com/skippet
  * By Arnav Kumar, http://github.com/arnav-kr
  * MIT Licence.  
  */
 ((root, factory) => {
-  if (typeof exports === 'object' && typeof module === 'object')
+  if (typeof exports === 'object' && typeof module === 'object') {
     module.exports = factory();
-  else if (typeof define === 'function' && define.amd)
+  }
+  else if (typeof define === 'function' && define.amd) {
     define([], factory);
-  else if (typeof exports === 'object')
+  }
+  else if (typeof exports === 'object') {
     exports["SoloAlert"] = factory();
-  else
-    root["SoloAlert"] = factory();
+  }
+  else {
+    try {
+      root["SoloAlert"] = factory();
+    }
+    catch (e) {
+      root.returnExports = factory();
+    }
+  }
+
 })(this, () => {
   const SoloAlert = {
     defaults: {
