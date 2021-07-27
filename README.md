@@ -3,10 +3,32 @@ A customizable lightweight Alert Library with Material UI and awesome features.
 
 ### Installation via npm
 
-```cmd
-npm install soloalert
+```bash
+npm i soloalert
+```
+now you can directly use soloalert as a script in your project.
+
+Example: 
+```javascript
+<script src="/node_modules/soloalert/index.js"></script>
+<script>
+  addEventListener('DOMContentLoaded', function () {
+    SoloAlert.alert({title: "Welcome!", body: "I am a SoloAlert"});
+  });
+</script>
+```
+Advanced Examples can be found in the usage docs below 
+
+### Installating via CDN
+
+CDN script:
+```html
+<script src="https://unpkg.com/soloalert"></script>
 ```
 
 
-### Usage Docs with CDN:
+### Usage Docs:
+
+The Usage Docs are Provided at the github page
+
 https://arnav-kr.github.io/soloalert/
