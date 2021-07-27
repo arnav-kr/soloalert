@@ -1,0 +1,459 @@
+:root, html, body {
+  font-size: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: initial;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header nav, header {
+  background-color: #263238;
+  min-height: 4rem;
+  width: 100%;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+header {
+  position: fixed;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+footer nav, footer {
+  background-color: #263238;
+  min-height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+[center] {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav>*, ul *, ul {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1rem;
+  display: flex;
+  margin: 0;
+}
+
+ul>* {
+  padding: 0 .5rem;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
+* {
+  outline: 1px sold red;
+}
+
+a {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.brand-logo {
+  font-size: 1.8rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between;
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 400;
+}
+
+.brand-js {
+  background-color: orange;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: hide-and-seek 4s ease-in-out infinite;
+}
+
+@keyframes hide-and-seek {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  margin-right: .5rem;
+}
+
+.sidenav {
+  padding-top: 1rem;
+}
+
+footer nav {
+  background-color: #263238;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.footer {
+  margin: 1rem;
+  font-weight: 500;
+}
+
+.footer li {
+  padding: 0 .5rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.code {
+  background-color: #dadada;
+  padding: .3rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+
+h6 {
+  font-size: 1.37rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.container {
+  margin: 2rem 4rem;
+}
+
+.table-container {
+  width: calc(100%);
+  overflow: auto;
+}
+
+.runnable-code-container {
+  width: 100%;
+}
+
+.editor, .runnable-code {
+  font-family: Consolas, "Courier New", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  font-feature-settings: "liga"0, "calt"0;
+  line-height: 21px;
+  letter-spacing: 0px;
+  tab-size: 2;
+  border-radius: 4px;
+  resize: none !important;
+  margin: .5rem 0;
+  background: #282c34;
+}
+
+.runnable-logs {
+  padding: .5rem;
+  margin-bottom: .5rem;
+  width: calc(100% - 1rem);
+  display: none;
+  overflow-x: auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
+
+.runnable-code-btn, .btn {
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  background-color: mediumseagreen;
+  color: white;
+  outline: 0;
+  user-select: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.runnable-code-btn:active {
+  transform: scale(.95);
+}
+
+div.code-toolbar>.toolbar {
+  opacity: 1;
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table, th, tr, td {
+  border: 2px solid #cacaca;
+  border-collapse: collapse;
+  padding: .5rem;
+  text-align: center;
+}
+
+th {
+  color: #263238;
+}
+
+tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 481px) {
+  .container {
+    margin: 1rem 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .code {
+    background-color: #dadada;
+    padding: .3rem;
+    border-radius: 3px;
+    font-size: .7rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1.2rem 0;
+  }
+  h6 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 1.2rem 0;
+  }
+}
+
+/* Code-Input Compability */
+
+/* By WebCoder49 */
+
+/* First Published on CSS-Tricks.com */
+
+code-editor {
+  /* Allow other elems to be inside */
+  position: relative;
+  height: auto;
+  display: block;
+}
+
+.code-input_editing, .code-input_highlighting {
+  /* Both elements need the same text and space styling so they are directly on top of each other */
+  margin: 10px!important;
+  padding: 10px!important;
+  border: 0;
+  width: calc(100% - 32px)!important;
+  height: calc(100% - 32px)!important;
+}
+
+.code-input_editing, .code-input_highlighting, .code-input_highlighting * {
+  /* Also add text styles to highlighing tokens */
+  font-size: 15pt!important;
+  font-family: monospace;
+  line-height: 20pt!important;
+}
+
+.code-input_editing, .code-input_highlighting {
+  /* In the same place */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Move the textarea in front of the result */
+
+.code-input_editing {
+  z-index: 1;
+}
+
+.code-input_highlighting {
+  z-index: 0;
+}
+
+/* Make textarea almost completely transparent */
+
+.code-input_editing {
+  color: transparent;
+  background: transparent;
+  caret-color: white;
+  /* Or choose your favourite color */
+}
+
+/* Can be scrolled */
+
+.code-input_editing, .code-input_highlighting {
+  overflow: auto;
+  white-space: nowrap;
+  /* Allows textarea to scroll horizontally */
+}
+
+/* No resize on textarea */
+
+.code-input_editing {
+  resize: none;
+}
+
+/* PrismJS 1.24.1
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+json+jsonp+jsx+tsx+regex+sass+scss+typescript+typoscript */
+
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+code[class*="language-"], pre[class*="language-"] {
+  color: #ccc;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+:not(pre)>code[class*="language-"], pre[class*="language-"] {
+  background: #2d2d2d;
+}
+
+/* Inline code */
+
+:not(pre)>code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+.token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
+  color: #999;
+}
+
+.token.punctuation {
+  color: #ccc;
+}
+
+.token.tag, .token.attr-name, .token.namespace, .token.deleted {
+  color: #e2777a;
+}
+
+.token.function-name {
+  color: #6196cc;
+}
+
+.token.boolean, .token.number, .token.function {
+  color: #f08d49;
+}
+
+.token.property, .token.class-name, .token.constant, .token.symbol {
+  color: #f8c555;
+}
+
+.token.selector, .token.important, .token.atrule, .token.keyword, .token.builtin {
+  color: #cc99cd;
+}
+
+.token.string, .token.char, .token.attr-value, .token.regex, .token.variable {
+  color: #7ec699;
+}
+
+.token.operator, .token.entity, .token.url {
+  color: #67cdcc;
+}
+
+.token.important, .token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.inserted {
+  color: green;
+}
