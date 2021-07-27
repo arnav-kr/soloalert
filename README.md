@@ -1,6 +1,8 @@
 # SoloAlert
 A customizable lightweight Alert Library with Material UI and awesome features.
 
+view soloalert on npm : https://www.npmjs.com/package/soloalert
+
 ### Installation via npm
 
 ```bash
