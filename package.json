@@ -2,7 +2,7 @@
   "name": "soloalert",
   "version": "1.0.0",
   "description": "A customizable lightweight Alert Library with Material UI and awesome features.",
-  "main": "index.js",
+  "browser": "index.js",
   "directories": {
     "doc": "docs"
   },
