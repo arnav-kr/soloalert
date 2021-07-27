@@ -16,12 +16,7 @@
     exports["SoloAlert"] = factory();
   }
   else {
-    try {
-      root["SoloAlert"] = factory();
-    }
-    catch (e) {
-      root.returnExports = factory();
-    }
+    root["SoloAlert"] = factory();
   }
 
 })(this, () => {
