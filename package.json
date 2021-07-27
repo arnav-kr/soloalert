@@ -1,0 +1,31 @@
+{
+  "name": "soloalert",
+  "version": "1.0.0",
+  "description": "A customizable lightweight Alert Library with Material UI and awesome features.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo 'test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnav-kr/soloalert.git"
+  },
+  "keywords": [
+    "soloalert",
+    "alerts",
+    "javascript",
+    "front-end",
+    "alert-library",
+    "material-UI",
+    "costomizable"
+  ],
+  "author": "Arnav Kumar <arnav-kumar@outlook.com> (http://github.com/arnav-kr/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arnav-kr/soloalert/issues"
+  },
+  "homepage": "https://github.com/arnav-kr/soloalert#readme"
+}
