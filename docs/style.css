@@ -193,7 +193,7 @@ h6 {
 }
 
 .editor, .runnable-code {
-  font-family: Consolas, "Courier New", monospace !important;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
   font-weight: normal;
   font-size: 16px;
   font-feature-settings: "liga"0, "calt"0;
