@@ -31,7 +31,7 @@
       useTransparency: false,
       onOk: function () { },
       onCancel: function () { },
-      oninput: function () { },
+      onInput: function () { },
     },
     styles: (themer, wrapper_bg) => {
       return `
