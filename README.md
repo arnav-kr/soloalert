@@ -1,6 +1,6 @@
 # SoloAlert
 
-![soloAlert Logo](https://user-images.githubusercontent.com/72879799/127307597-f291e5b3-5efa-4b03-96cc-e7fd6e15d7d5.png)
+<img alt="soloAlert Logo" src="https://user-images.githubusercontent.com/72879799/127307597-f291e5b3-5efa-4b03-96cc-e7fd6e15d7d5.png" width="128px">
 
 A customizable lightweight Alert Library with Material UI and awesome features.
 
