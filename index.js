@@ -226,6 +226,7 @@
       justify-content:center !important;
       flex-direction:column !important;
       font-family:'Roboto', sans-serif !important;
+      user-select:none !important;
       -webkit-user-select:none !important;
       -moz-user-select:none !important;
       transition:background-color 2s ease !important;
@@ -235,6 +236,10 @@
       font-family: 'Roboto', sans-serif !important;
       font-weight:400 !important;
       caret-color: ${themer.blue} !important;
+      tap-highlight-color: rgba(0,0,0,0) !important;
+      -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+      -moz-tap-highlight-color: rgba(0,0,0,0) !important;
+      -ms-tap-highlight-color: rgba(0,0,0,0) !important;
   }
   .SoloAlert-wrapper *::-webkit-scrollbar {
       width: 10px !important;
