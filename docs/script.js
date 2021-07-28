@@ -39,7 +39,7 @@ function $(query) { return document.querySelector(query); }
 function cprt() {
   var el = document.getElementById("cprt");
   var year = new Date().getFullYear();
-  el.textContent = `© ${year} Arnav Kumar`;
+  el.innerHTML = `© ${year} <a href='https://github.com/arnav-kr'>Arnav Kumar</a>`;
 }
 function MakeRunnable() {
   var btns = document.querySelectorAll(".runnable-code-btn");
