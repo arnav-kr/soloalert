@@ -262,8 +262,8 @@
   .SoloAlert-wrapper .SoloAlert{
       min-width:10rem !important;
       max-width:18rem !important;
-      min-height:8rem !important;
-      max-height:70vh !important;
+      /* min-height:8rem !important;
+      max-height:70vh !important; */
       width:calc(100vw - 4rem) !important;
       height:auto !important;
       background-color:${themer.background} !important;
