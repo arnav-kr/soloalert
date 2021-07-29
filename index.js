@@ -497,7 +497,7 @@
       }
       var inp_title = (/string|number/).test(typeof (options.title)) ? options.title : SoloAlert.defaults.title || "Title";
       var inp_body = (/string|number/).test(typeof (options.body)) ? options.body : SoloAlert.defaults.body || "";
-      var inp_icon = typeof (options.icon) === "string" && (/success|error|warning/).test(options.icon) ? options.icon : SoloAlert.defaults.icon || "";
+      var inp_icon = typeof (options.icon) === "string" && Object.keys(SoloAlert.data_icons).includes(options.icon) ? options.icon : SoloAlert.defaults.icon || "";
       var inp_html = typeof (options.html) === "string" ? options.html : SoloAlert.defaults.html || "";
       var inp_theme = (/dark|light|auto/).test(options.theme) ? options.theme : SoloAlert.defaults.theme || "auto";
       var inp_onOk = typeof (options.onOk) === "function" ? options.onOk : SoloAlert.defaults.onOk || function () { };
