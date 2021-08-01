@@ -37,3 +37,7 @@ CDN script:
 The Usage Docs are Provided at the github page
 
 #### https://arnav-kr.github.io/soloalert/
+
+and
+
+#### https://soloalert.js.org/
