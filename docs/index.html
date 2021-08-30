@@ -6,15 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=7">
   <meta name="description" content="A customizable lightweight Alert Library with Material UI and awesome features.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="soloalert, alert library, npm, web, javascript, javascript library, sololearn, sololearn alerts, sl, front-end, sweetalert, swal(), swal, arnav-kr, arnav, github, Arnav Kumar">
+  <meta name="keywords"
+    content="soloalert, alert library, npm, web, javascript, javascript library, code, programming, npm, github, sololearn, sololearn alerts, sl, front-end, web development, web developer, sweetalert, swal(), swal, arnav-kr, arnav, github, Arnav Kumar">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta property="og:title" content="SoloAlert.js" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://soloalert.js.org/" />
+  <meta property="og:image" content="https://soloalert.js.org//assets/soloalert.png" />
+  <meta property="og:image:secure_url" content="https://soloalert.js.org//assets/soloalert.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="SoloAlert Logo" />
+  <meta property="og:description"
+    content="A customizable lightweight Alert Library with Material UI and awesome features." />
+  <meta property="og:type" content="website" />
   <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
   <link rel="apple-touch-icon" href="../favicon.png">
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
   <!-- AdSense Script -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6290792326682212" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6290792326682212"
+    crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="../../index.js"></script>
+  <script src="https://unpkg.com/soloalert"></script>
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Sharp|Material+Icons+Round|Material+Icons+Two+Tone"
     rel="stylesheet">
@@ -34,15 +48,17 @@
   <!-- Code Editor Setup End -->
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
   <header data-color-mode="dark" data-dark-theme="dark_dimmed">
     <nav>
-      <a href="#" target="_blank" class="brand-logo"><img src="../assets/soloalert.svg" alt="SoloAlert Logo" class="logo"
-          preload width="40">SoloAlert<span class="brand-js">.js</span></a>
-          <div id="github" style="position: fixed;right: 1rem; top: 1rem;"><a target="_blank" href="https://github.com/arnav-kr/soloalert"><img src="../assets/github.svg" style="filter: invert(100%);" alt="GitHub" width="32px" height="32px"></a></div>
+      <a href="#" target="_blank" class="brand-logo"><img src="../assets/soloalert.svg" alt="SoloAlert Logo"
+          class="logo" preload width="40">SoloAlert<span class="brand-js">.js</span></a>
+      <div id="github" style="position: fixed;right: 1rem; top: 1rem;"><a target="_blank"
+          href="https://github.com/arnav-kr/soloalert"><img src="../assets/github.svg" style="filter: invert(100%);"
+            alt="GitHub" width="32px" height="32px"></a></div>
     </nav>
   </header>
 
@@ -57,108 +73,113 @@
         <h2>Including the library:</h2>
         <p>Its so easy to include SoloAlert.js to your website. Just Copy the following code below and put in the <code
             class="code">&lt;head&gt;&lt;/head&gt;</code> of your website and done.</p>
-        <pre class="runnable-code" data-color-mode="dark" data-dark-theme="dark_dimmed"><code class="language-html">&lt;script src="https://unpkg.com/soloalert"&gt;&lt;/script&gt;</code></pre>
-        <button id="copy-script" center class="btn copy-btn btn-primary" data-copy-content='&lt;script src="https://unpkg.com/soloalert" type="text/javascript"&gt;&lt;/script&gt;'>Copy Script</button>
-        </div>
+        <pre class="runnable-code" data-color-mode="dark"
+          data-dark-theme="dark_dimmed"><code class="language-html">&lt;script src="https://unpkg.com/soloalert"&gt;&lt;/script&gt;</code></pre>
+        <button id="copy-script" center class="btn copy-btn btn-primary"
+          data-copy-content='&lt;script src="https://unpkg.com/soloalert" type="text/javascript"&gt;&lt;/script&gt;'>Copy
+          Script</button>
+      </div>
       <div id="using">
         <h2>Getting Started:</h2>
         <p>Solo Alert requires DOM to be loaded to show the alert.<br />Here's a simple code for an alert with a Title
           and body text.<br> Try runing it and see the alert.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-  title:"Title Here",
-  body:"Body Text.",
-});</div>
+            title:"Title Here",
+            body:"Body Text.",
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying an alert with an Icon.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-  title:"Title Here",
-  body:"Alert With An Icon",
-  icon: "success"
-});</div>
+            title:"Title Here",
+            body:"Alert With An Icon",
+            icon: "success"
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
-        <p>There are three available icons: <code>success</code>, <code>warning</code>, <code>error</code>. But you can also add your own icons' html to <code class="code">SoloAlert.data_icons</code> and use them in icon parameter.</p>
+        <p>There are three available icons: <code>success</code>, <code>warning</code>, <code>error</code>. But you can
+          also add your own icons' html to <code class="code">SoloAlert.data_icons</code> and use them in icon
+          parameter.</p>
         <p>Displaying a Simple Prompt with heading and text.</p>
         <div class="runnable-code-container">
 
           <div class="runnable-code language-js">SoloAlert.prompt({
-  title:"Title Here",
-  body:"Enter a Number",
-  type: "number"
-});</div>
+            title:"Title Here",
+            body:"Enter a Number",
+            type: "number"
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying a Prompt Message and Getting the Entered Value.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-  title:"Title Here",
-  body:"Enter a Number",
-  type: "number"
-}).then(value => {
-  SoloAlert.alert({
-    title: "Prompt Output",
-    body: "The Entered Number was " + value
-  })
-})</div>
+            title:"Title Here",
+            body:"Enter a Number",
+            type: "number"
+            }).then(value => {
+            SoloAlert.alert({
+            title: "Prompt Output",
+            body: "The Entered Number was " + value
+            })
+            })</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying a Confirm Message.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.confirm({
-  title:"Title Here",
-  body:"Are you a Cat ?"
-});</div>
+            title:"Title Here",
+            body:"Are you a Cat ?"
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
-        </div>        
+        </div>
         <p>Displaying a Confirm Message. And getting User Choice</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.confirm({
-  title:"Title Here",
-  body:"Are you a Cat ?"
-}).then(value => {
-  SoloAlert.alert({
-    title: "User Choice",
-    body: "You Choosed " + value
-  })
-})</div>
+            title:"Title Here",
+            body:"Are you a Cat ?"
+            }).then(value => {
+            SoloAlert.alert({
+            title: "User Choice",
+            body: "You Choosed " + value
+            })
+            })</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying an Alert with a Light theme (default is <code>"auto"</code>)</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-  title:"Title Here",
-  body:"Light Theme.",
-  theme: "light"
-})</div>
+            title:"Title Here",
+            body:"Light Theme.",
+            theme: "light"
+            })</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying an Alert with a Dark theme (default is <code>"auto"</code>)</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-  title:"Title Here",
-  body:"Dark Theme.",
-  theme: "dark"
-})</div>
+            title:"Title Here",
+            body:"Dark Theme.",
+            theme: "dark"
+            })</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying an Alert with Transparency effect is (default is <code>false</code>)</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-  title:"Title Here",
-  body:"My Background is a bit transparent.",
-  useTransparency: true,
-})</div>
+            title:"Title Here",
+            body:"My Background is a bit transparent.",
+            useTransparency: true,
+            })</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -171,23 +192,24 @@
         <div class="runnable-code-container">
 
           <div class="runnable-code language-js">SoloAlert.alert({
-  title:"Title Here",
-  body:"Body Text With HTML",
-  html: `&lt;img src="https://arnav5544.github.io/arnav.png" alt="Arnav"&gt;`
-});</div>
+            title:"Title Here",
+            body:"Body Text With HTML",
+            html: `&lt;img src="https://arnav5544.github.io/arnav.png" alt="Arnav"&gt;`
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>To maintain the alert's height, the html contet will become scrollable if its long.</p>
         <h3><code>OnOk</code> property</h3>
-        <p><code>onOk</code> property is useful when you want to perform a spectic function when user clicks the ok button.
-           One of its implementation could be playing audio when user clicks ok.</p>
-           <div class="runnable-code-container">
+        <p><code>onOk</code> property is useful when you want to perform a spectic function when user clicks the ok
+          button.
+          One of its implementation could be playing audio when user clicks ok.</p>
+        <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-  title:"Title Here",
-  body:"Lets Begin The Journey",
-  onOk : ()=>{alert("Journey Begin!");}
-});</div>
+            title:"Title Here",
+            body:"Lets Begin The Journey",
+            onOk : ()=>{alert("Journey Begin!");}
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -196,208 +218,217 @@
         <h2>More on Prompts</h2>
         <h3><code>type</code> property</h3>
         <p><code>type</code> property sets the type of the input in the prompt.</p>
-           <div class="runnable-code-container">
+        <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-  title:"Title Here",
-  body:"Do you want to cancel",
-  onOk: ()=>{alert("User Pressed Ok!")},
-  onCancel: ()=>{alert("User Canceled the Prompt!")}
-});</div>
+            title:"Title Here",
+            body:"Do you want to cancel",
+            onOk: ()=>{alert("User Pressed Ok!")},
+            onCancel: ()=>{alert("User Canceled the Prompt!")}
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <h3><code>onCancel</code> property</h3>
-        <p><code>onCancel</code> property is useful when you want to perform a spectic function when user clicks the cancel button.</p>
-           <div class="runnable-code-container">
+        <p><code>onCancel</code> property is useful when you want to perform a spectic function when user clicks the
+          cancel button.</p>
+        <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-  title:"Title Here",
-  body:"Do you want to cancel",
-  onOk: ()=>{alert("User Pressed Ok!")},
-  onCancel: ()=>{alert("User Canceled the Prompt!")}
-});</div>
+            title:"Title Here",
+            body:"Do you want to cancel",
+            onOk: ()=>{alert("User Pressed Ok!")},
+            onCancel: ()=>{alert("User Canceled the Prompt!")}
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
 
         <h3><code>onInput</code> property</h3>
-        <p><code>onInput</code> property is useful when you want to perform a spectic function everytime user entered something into the input. You can get the value of input by <code>event.target.value</code></p>
-           <div class="runnable-code-container">
+        <p><code>onInput</code> property is useful when you want to perform a spectic function everytime user entered
+          something into the input. You can get the value of input by <code>event.target.value</code></p>
+        <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-  title:"Title Here",
-  body:"Do you want to cancel",
-  onOk: ()=>{alert("User Pressed Ok!")},
-  onCancel: ()=>{alert("User Canceled the Prompt!")},
-  onInput: (e)=>{console.log("User Entered: " + e.target.value);}
-});</div>
+            title:"Title Here",
+            body:"Do you want to cancel",
+            onOk: ()=>{alert("User Pressed Ok!")},
+            onCancel: ()=>{alert("User Canceled the Prompt!")},
+            onInput: (e)=>{console.log("User Entered: " + e.target.value);}
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <h3><code>textLimit</code> property</h3>
-        <p><code>textLimit</code> property is used to set the textlimit of the prompt input. the default value is 100</p>
-           <div class="runnable-code-container">
+        <p><code>textLimit</code> property is used to set the textlimit of the prompt input. the default value is 100
+        </p>
+        <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-  title:"Title Here",
-  body:"Do you want to cancel",
-  textLimit: 200,
-  onOk: ()=>{alert("User Pressed Ok!")},
-  onCancel: ()=>{alert("User Canceled the Prompt!")},
-  onInput: (e)=>{console.log("User Entered: " + e.target.value);}
-});</div>
+            title:"Title Here",
+            body:"Do you want to cancel",
+            textLimit: 200,
+            onOk: ()=>{alert("User Pressed Ok!")},
+            onCancel: ()=>{alert("User Canceled the Prompt!")},
+            onInput: (e)=>{console.log("User Entered: " + e.target.value);}
+            });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
       </div>
       <div id="options">
         <h2>Options:</h2>
-        <pre class="runnable-code" data-color-mode="dark" data-dark-theme="dark_dimmed"><code class="language-js">SoloAlert.alert({...options});</code></pre>
+        <pre class="runnable-code" data-color-mode="dark"
+          data-dark-theme="dark_dimmed"><code class="language-js">SoloAlert.alert({...options});</code></pre>
         <p>There are many options to customize your alert.</p>
         <div class="table-container">
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Value</th>
-            <th>Use</th>
-          </tr>
-          <tr>
-            <td><code class="code">title</code></td>
-            <td><code>String</code></td>
-            <td>Sets the title of SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">body</code></td>
-            <td><code>String</code></td>
-            <td>Sets the body text of SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">html</code></td>
-            <td><code>String</code></td>
-            <td>Sets the html content you want to display in SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">useTransparency</code></td>
-            <td><code>Boolean</code></td>
-            <td>Sets whether the SoloAlert Backdrop backgound is semi-transparent.</td>
-          </tr>
-          <tr>
-            <td><code class="code">theme</code></td>
-            <td><code>auto</code> | <code>light</code> | <code>dark</code></td>
-            <td>Sets the theme of the SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">icon</code></td>
-            <td><code>success</code> | <code>error</code> | <code>warning</code> | <code>"any"</code></td>
-            <td>Sets the icon to display in SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">onOk</code></td>
-            <td>JavaScript <code>Function</code></td>
-            <td>runs the given function when ok button is clicked</td>
-          </tr>
-        </table>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+              <th>Use</th>
+            </tr>
+            <tr>
+              <td><code class="code">title</code></td>
+              <td><code>String</code></td>
+              <td>Sets the title of SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">body</code></td>
+              <td><code>String</code></td>
+              <td>Sets the body text of SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">html</code></td>
+              <td><code>String</code></td>
+              <td>Sets the html content you want to display in SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">useTransparency</code></td>
+              <td><code>Boolean</code></td>
+              <td>Sets whether the SoloAlert Backdrop backgound is semi-transparent.</td>
+            </tr>
+            <tr>
+              <td><code class="code">theme</code></td>
+              <td><code>auto</code> | <code>light</code> | <code>dark</code></td>
+              <td>Sets the theme of the SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">icon</code></td>
+              <td><code>success</code> | <code>error</code> | <code>warning</code> | <code>"any"</code></td>
+              <td>Sets the icon to display in SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">onOk</code></td>
+              <td>JavaScript <code>Function</code></td>
+              <td>runs the given function when ok button is clicked</td>
+            </tr>
+          </table>
         </div>
         <p>options to customize your prompt.</p>
-        <pre class="runnable-code" data-color-mode="dark" data-dark-theme="dark_dimmed"><code class="language-js">SoloAlert.prompt({...options});</code></pre>
+        <pre class="runnable-code" data-color-mode="dark"
+          data-dark-theme="dark_dimmed"><code class="language-js">SoloAlert.prompt({...options});</code></pre>
         <div class="table-container">
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Value</th>
-            <th>Use</th>
-          </tr>
-          <tr>
-            <td><code class="code">title</code></td>
-            <td><code>String</code></td>
-            <td>Sets the title of SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">body</code></td>
-            <td><code>String</code></td>
-            <td>Sets the body text of SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">type</code></td>
-            <td><code>String</code></td>
-            <td>Sets the type of the input box shown in the prompt. all the HTML Input types are valid value for type.</td>
-          </tr>
-          <tr>
-            <td><code class="code">useTransparency</code></td>
-            <td><code>Boolean</code></td>
-            <td>Sets whether the SoloAlert Backdrop backgound is semi-transparent.</td>
-          </tr>
-          <tr>
-            <td><code class="code">theme</code></td>
-            <td><code>auto</code> | <code>light</code> | <code>dark</code></td>
-            <td>Sets the theme of the SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">textLimit</code></td>
-            <td><code>number</code></td>
-            <td>Sets the text limit of the prompt input</td>
-          </tr>
-          <tr>
-            <td><code class="code">onOk</code></td>
-            <td>JavaScript <code>Function</code></td>
-            <td>runs the given function when ok button is clicked</td>
-          </tr>
-          <tr>
-            <td><code class="code">onCancel</code></td>
-            <td>JavaScript <code>Function</code></td>
-            <td>runs the given function when Cancel button is clicked</td>
-          </tr>
-          <tr>
-            <td><code class="code">onInput</code></td>
-            <td>JavaScript <code>Function</code></td>
-            <td>runs the given function when User Inputs Texts in the Input</td>
-          </tr>
-        </table>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+              <th>Use</th>
+            </tr>
+            <tr>
+              <td><code class="code">title</code></td>
+              <td><code>String</code></td>
+              <td>Sets the title of SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">body</code></td>
+              <td><code>String</code></td>
+              <td>Sets the body text of SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">type</code></td>
+              <td><code>String</code></td>
+              <td>Sets the type of the input box shown in the prompt. all the HTML Input types are valid value for type.
+              </td>
+            </tr>
+            <tr>
+              <td><code class="code">useTransparency</code></td>
+              <td><code>Boolean</code></td>
+              <td>Sets whether the SoloAlert Backdrop backgound is semi-transparent.</td>
+            </tr>
+            <tr>
+              <td><code class="code">theme</code></td>
+              <td><code>auto</code> | <code>light</code> | <code>dark</code></td>
+              <td>Sets the theme of the SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">textLimit</code></td>
+              <td><code>number</code></td>
+              <td>Sets the text limit of the prompt input</td>
+            </tr>
+            <tr>
+              <td><code class="code">onOk</code></td>
+              <td>JavaScript <code>Function</code></td>
+              <td>runs the given function when ok button is clicked</td>
+            </tr>
+            <tr>
+              <td><code class="code">onCancel</code></td>
+              <td>JavaScript <code>Function</code></td>
+              <td>runs the given function when Cancel button is clicked</td>
+            </tr>
+            <tr>
+              <td><code class="code">onInput</code></td>
+              <td>JavaScript <code>Function</code></td>
+              <td>runs the given function when User Inputs Texts in the Input</td>
+            </tr>
+          </table>
         </div>
         <p>options to customize your confirm.</p>
-        <pre class="runnable-code" data-color-mode="dark" data-dark-theme="dark_dimmed"><code class="language-js">SoloAlert.confirm({...options});</code></pre>
+        <pre class="runnable-code" data-color-mode="dark"
+          data-dark-theme="dark_dimmed"><code class="language-js">SoloAlert.confirm({...options});</code></pre>
         <div class="table-container">
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Value</th>
-            <th>Use</th>
-          </tr>
-          <tr>
-            <td><code class="code">title</code></td>
-            <td><code>String</code></td>
-            <td>Sets the title of SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">body</code></td>
-            <td><code>String</code></td>
-            <td>Sets the body text of SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">useTransparency</code></td>
-            <td><code>Boolean</code></td>
-            <td>Sets whether the SoloAlert Backdrop backgound is semi-transparent.</td>
-          </tr>
-          <tr>
-            <td><code class="code">theme</code></td>
-            <td><code>auto</code> | <code>light</code> | <code>dark</code></td>
-            <td>Sets the theme of the SoloAlert</td>
-          </tr>
-          <tr>
-            <td><code class="code">onOk</code></td>
-            <td>JavaScript <code>Function</code></td>
-            <td>runs the given function when ok button is clicked</td>
-          </tr>
-          <tr>
-            <td><code class="code">onCancel</code></td>
-            <td>JavaScript <code>Function</code></td>
-            <td>runs the given function when Cancel button is clicked</td>
-          </tr>
-        </table>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+              <th>Use</th>
+            </tr>
+            <tr>
+              <td><code class="code">title</code></td>
+              <td><code>String</code></td>
+              <td>Sets the title of SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">body</code></td>
+              <td><code>String</code></td>
+              <td>Sets the body text of SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">useTransparency</code></td>
+              <td><code>Boolean</code></td>
+              <td>Sets whether the SoloAlert Backdrop backgound is semi-transparent.</td>
+            </tr>
+            <tr>
+              <td><code class="code">theme</code></td>
+              <td><code>auto</code> | <code>light</code> | <code>dark</code></td>
+              <td>Sets the theme of the SoloAlert</td>
+            </tr>
+            <tr>
+              <td><code class="code">onOk</code></td>
+              <td>JavaScript <code>Function</code></td>
+              <td>runs the given function when ok button is clicked</td>
+            </tr>
+            <tr>
+              <td><code class="code">onCancel</code></td>
+              <td>JavaScript <code>Function</code></td>
+              <td>runs the given function when Cancel button is clicked</td>
+            </tr>
+          </table>
         </div>
       </div>
       <div id="soloalert-options">
         <h2>SoloAlert Options:</h2>
         <p>Properties and method that are available on the global object <code class="code">SoloAlert</code>:</p>
         <h3><code>SoloAlert.defaults</code></h3>
-        <p>It is an object that stores the default values to be used within the <code>alerts</code>, <code>prompts</code>, <code>confirm</code>. You can change the default values by this <code>object</code>.</p>
+        <p>It is an object that stores the default values to be used within the <code>alerts</code>,
+          <code>prompts</code>, <code>confirm</code>. You can change the default values by this <code>object</code>.
+        </p>
         <p>The defaults' properties are given below</p>
         <pre class="runnable-code" data-color-mode="dark" data-dark-theme="dark_dimmed"><code class="language-js">{
   title: "Title",
@@ -414,44 +445,61 @@
 }</code></pre>
         <p>you can change defaults' properties to anything that you want as the <code>default</code>.</p>
         <h3><code>SoloAlert.changeTheme(theme)</code></h3>
-        <p>changeTheme changes the theme of the SoloAlert. The valid values for the theme are "auto", "dark", "light".</p>
+        <p>changeTheme changes the theme of the SoloAlert. The valid values for the theme are "auto", "dark", "light".
+        </p>
         <h3><code>SoloAlert.setAsDefault()</code></h3>
-        <p>This replaces the browser's default <code>alert()</code>, <code>prompt()</code> and <code>confirm()</code> with the SoloAlert's <code>alert</code>, <code>prompt</code>, <code>confirm</code>. Means when you trigger the browser default alerts it will instead show a SoloAlert</p>
-        <p>when you set <code>SoloAlert</code> to as default browser alerts then there's a slight change in the syntax of writing alerts also.</p>
-        <p>when <code>SoloAlert</code> set to default its first argument is the body of the alert and the second argument is the alert <code>options</code>. and you don't have to define body in <code>options</code>. Also now the second argument <code>options</code> becomes optional.</p>
-        <p>Then the <code>title</code> can be set using the <code class="code">SoloAlert.defaults</code> so that <code>title</code> stays same in every alert and you don't have to everytime set the alert <code>title</code>.</p>
+        <p>This replaces the browser's default <code>alert()</code>, <code>prompt()</code> and <code>confirm()</code>
+          with the SoloAlert's <code>alert</code>, <code>prompt</code>, <code>confirm</code>. Means when you trigger the
+          browser default alerts it will instead show a SoloAlert</p>
+        <p>when you set <code>SoloAlert</code> to as default browser alerts then there's a slight change in the syntax
+          of writing alerts also.</p>
+        <p>when <code>SoloAlert</code> set to default its first argument is the body of the alert and the second
+          argument is the alert <code>options</code>. and you don't have to define body in <code>options</code>. Also
+          now the second argument <code>options</code> becomes optional.</p>
+        <p>Then the <code>title</code> can be set using the <code class="code">SoloAlert.defaults</code> so that
+          <code>title</code> stays same in every alert and you don't have to everytime set the alert <code>title</code>.
+        </p>
         <p>Example using SoloAlert as default Browser alert with a default <code>title</code> set to the alert.</p>
         <div class="runnable-code-container">
-          <div class="runnable-code language-js" data-color-mode="dark" data-dark-theme="dark_dimmed">SoloAlert.setAsDefault();
-SoloAlert.defaults.title = "Arnav Says";
-alert("hi");
-</div>
+          <div class="runnable-code language-js" data-color-mode="dark" data-dark-theme="dark_dimmed">
+            SoloAlert.setAsDefault();
+            SoloAlert.defaults.title = "Arnav Says";
+            alert("hi");
+          </div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>The same logic applies with the <code>prompts</code> and <code>confirm</code> also!</p>
         <h3><code>SoloAlert.resetDefaults()</code></h3>
-        <p>This method removes SoloAlert as Browser default and now <code>alert()</code>, <code>confirm()</code>, and <code>prompt()</code> would show the browser UI.</p>
+        <p>This method removes SoloAlert as Browser default and now <code>alert()</code>, <code>confirm()</code>, and
+          <code>prompt()</code> would show the browser UI.
+        </p>
         <p>Example using <code>resetDefaults();</code></p>
         <div class="runnable-code-container">
-          <div class="runnable-code language-js" data-color-mode="dark" data-dark-theme="dark_dimmed">SoloAlert.setAsDefault();
-alert("I will Show soloalert alert", {title: "SoloAlert UI", icon: "success"});
-//SoloAlert UI
-SoloAlert.resetDefaults();
-alert("I will show browser alert UI");
-//browser UI
-</div>
+          <div class="runnable-code language-js" data-color-mode="dark" data-dark-theme="dark_dimmed">
+            SoloAlert.setAsDefault();
+            alert("I will Show soloalert alert", {title: "SoloAlert UI", icon: "success"});
+            //SoloAlert UI
+            SoloAlert.resetDefaults();
+            alert("I will show browser alert UI");
+            //browser UI
+          </div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
       </div>
-      <p>Made With ❤ By <a href="https://github.com/arnav-kr" target="_blank" rel="noopener noreferrer">Arnav Kumar</a></p>
+      <p>Made With ❤ By <a href="https://github.com/arnav-kr" target="_blank" rel="noopener noreferrer">Arnav Kumar</a>
+      </p>
       <p>Feel Free to Contribute and notify me of any bugs.</p>
-      <div class="github-actions mb-3" >
-        <a target="_blank" class="github-button" href="https://github.com/arnav-kr/soloalert" data-icon="octicon-star" data-size="large" aria-label="Star arnav-kr/soloalert on GitHub">Star</a>
-        <a target="_blank" class="github-button" href="https://github.com/arnav-kr/soloalert/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue arnav-kr/soloalert on GitHub">Issue</a>
-        <a target="_blank" class="github-button" href="https://github.com/arnav-kr/soloalert/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork arnav-kr/soloalert on GitHub">Fork</a>
-        <a target="_blank" class="github-button" href="https://github.com/arnav-kr" data-size="large" aria-label="Follow @arnav-kr on GitHub">Follow</a> 
+      <div class="github-actions mb-3">
+        <a target="_blank" class="github-button" href="https://github.com/arnav-kr/soloalert" data-icon="octicon-star"
+          data-size="large" aria-label="Star arnav-kr/soloalert on GitHub">Star</a>
+        <a target="_blank" class="github-button" href="https://github.com/arnav-kr/soloalert/issues"
+          data-icon="octicon-issue-opened" data-size="large" aria-label="Issue arnav-kr/soloalert on GitHub">Issue</a>
+        <a target="_blank" class="github-button" href="https://github.com/arnav-kr/soloalert/fork"
+          data-icon="octicon-repo-forked" data-size="large" aria-label="Fork arnav-kr/soloalert on GitHub">Fork</a>
+        <a target="_blank" class="github-button" href="https://github.com/arnav-kr" data-size="large"
+          aria-label="Follow @arnav-kr on GitHub">Follow</a>
       </div>
     </div>
   </main>
@@ -469,7 +517,7 @@ alert("I will show browser alert UI");
     </nav>
   </footer>
   <script>
-    
+
   </script>
 </body>
 
