@@ -27,6 +27,7 @@
       icon: "",
       theme: "auto",
       html: "",
+      type: "text",
       textLimit: 100,
       useTransparency: false,
       onOk: function () { },
@@ -592,12 +593,13 @@
     },
     prompt: (options) => {
       if (typeof (options) !== "object" || Array.isArray(options)) {
-        throw new TypeError("SoloAler Prompt: provided argument must be an Object!")
+        throw new TypeError("SoloAlert Prompt: provided argument must be an Object!")
       }
       var inp_title = (/string|number/).test(typeof (options.title)) ? options.title : SoloAlert.defaults.title || "Title";
       var inp_body = (/string|number/).test(typeof (options.body)) ? options.body : SoloAlert.defaults.body || "";
       var inp_textLimit = typeof (options.textLimit) === "number" ? Math.round(parseInt(options.textLimit)) : SoloAlert.defaults.textLimit || 100;
       var inp_theme = (/dark|light|auto/).test(options.theme) ? options.theme : SoloAlert.defaults.theme || "auto";
+      var inp_type = typeof (options.type) == "string" ? options.type : SoloAlert.defaults.type || "text";
       var inp_onOk = typeof (options.onOk) === "function" ? options.onOk : SoloAlert.defaults.onOk || function () { };
       var inp_onCancel = typeof (options.onCancel) === "function" ? options.onCancel : SoloAlert.defaults.onCancel || function () { };
       var inp_onInput = typeof (options.onInput) === "function" ? options.onInput : SoloAlert.defaults.onInput || function () { };
@@ -634,6 +636,7 @@
       promptLabel.setAttribute("for", "SoloAlert-prompt-input");
       promptLabel.textContent = "Input";
       var promptInput = document.createElement("input");
+      promptInput.type = inp_type;
       promptInput.classList.add("SoloAlert-prompt-input");
       promptInput.setAttribute("max-limit", inp_textLimit)
       var promptCharacterCounter = document.createElement("span");
