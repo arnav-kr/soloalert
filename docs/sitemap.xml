@@ -6,12 +6,12 @@
     <priority>1.0</priority>
     <lastmod>2021-08-31</lastmod>
     <image:image>
-      <image:loc>http://soloalert.js.org/assets/soloalert.png</image:loc>
+      <image:loc>https://soloalert.js.org/assets/soloalert.png</image:loc>
       <image:caption>The Javascript Alert Library</image:caption>
       <image:title>SoloAlert.js</image:title>
     </image:image>
     <image:image>
-      <image:loc>http://soloalert.js.org/assets/soloalert.svg</image:loc>
+      <image:loc>https://soloalert.js.org/assets/soloalert.svg</image:loc>
       <image:caption>The Javascript Alert Library</image:caption>
       <image:title>SoloAlert.js</image:title>
     </image:image>
