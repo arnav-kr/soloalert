@@ -600,6 +600,7 @@
       var inp_textLimit = typeof (options.textLimit) === "number" ? Math.round(parseInt(options.textLimit)) : SoloAlert.defaults.textLimit || 100;
       var inp_theme = (/dark|light|auto/).test(options.theme) ? options.theme : SoloAlert.defaults.theme || "auto";
       var inp_type = typeof (options.type) == "string" ? options.type : SoloAlert.defaults.type || "text";
+      var inp_attributes = typeof (options.attributes) == "object" && !Array.isArray(options.attributes) ? options.attributes : SoloAlert.defaults.attributes || {};
       var inp_onOk = typeof (options.onOk) === "function" ? options.onOk : SoloAlert.defaults.onOk || function () { };
       var inp_onCancel = typeof (options.onCancel) === "function" ? options.onCancel : SoloAlert.defaults.onCancel || function () { };
       var inp_onInput = typeof (options.onInput) === "function" ? options.onInput : SoloAlert.defaults.onInput || function () { };
@@ -637,6 +638,14 @@
       promptLabel.textContent = "Input";
       var promptInput = document.createElement("input");
       promptInput.type = inp_type;
+      for (attr in inp_attributes) {
+        if (attr == "class" || attr == "className") {
+          promptInput.className += inp_attributes[attr];
+        }
+        else {
+          promptInput.setAttribute(attr, inp_attributes[attr]);
+        }
+      }
       promptInput.classList.add("SoloAlert-prompt-input");
       promptInput.setAttribute("max-limit", inp_textLimit)
       var promptCharacterCounter = document.createElement("span");

@@ -12,8 +12,8 @@
   <meta property="og:title" content="SoloAlert.js" />
   <meta property="og:type" content="video.movie" />
   <meta property="og:url" content="https://soloalert.js.org/" />
-  <meta property="og:image" content="https://soloalert.js.org//assets/soloalert.png" />
-  <meta property="og:image:secure_url" content="https://soloalert.js.org//assets/soloalert.png" />
+  <meta property="og:image" content="https://soloalert.js.org/assets/soloalert.png" />
+  <meta property="og:image:secure_url" content="https://soloalert.js.org/assets/soloalert.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="1024" />
@@ -21,6 +21,7 @@
   <meta property="og:description"
     content="A customizable lightweight Alert Library with Material UI and awesome features." />
   <meta property="og:type" content="website" />
+  <meta name="google" content="notranslate" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,14 +30,14 @@
       "logo": "http://soloalert.js.org/assets/soloalert.png"
     }
     </script>
-  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./favicon.png">
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
   <!-- AdSense Script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6290792326682212"
     crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://unpkg.com/soloalert"></script>
+  <script src="/index.js"></script>
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Sharp|Material+Icons+Round|Material+Icons+Two+Tone"
     rel="stylesheet">
@@ -70,7 +71,7 @@
     </nav>
   </header>
 
-  <main class="markdown-body m-" data-theme="dark">
+  <main class="markdown-body" data-theme="dark">
     <div class="container">
       <h1>Documentation</h1>
       <div id="intro">
@@ -82,7 +83,7 @@
         <p>Its so easy to include SoloAlert.js to your website. Just Copy the following code below and put in the <code
             class="code">&lt;head&gt;&lt;/head&gt;</code> of your website and done.</p>
         <pre class="runnable-code" data-color-mode="dark"
-          data-dark-theme="dark_dimmed"><code class="language-html">&lt;script src="https://unpkg.com/soloalert"&gt;&lt;/script&gt;</code></pre>
+          data-dark-theme="dark_dimmed"><code class="language-html">&lt;script src="https://unpkg.com/soloalert" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
         <button id="copy-script" center class="btn copy-btn btn-primary"
           data-copy-content='&lt;script src="https://unpkg.com/soloalert" type="text/javascript"&gt;&lt;/script&gt;'>Copy
           Script</button>
@@ -112,6 +113,17 @@
         <p>There are three available icons: <code>success</code>, <code>warning</code>, <code>error</code>. But you can
           also add your own icons' html to <code class="code">SoloAlert.data_icons</code> and use them in icon
           parameter.</p>
+          <p>Displaying an alert with a custom Icon.</p>
+          <div class="runnable-code-container">
+            <div class="runnable-code language-js">SoloAlert.data_icons.logo = '&lt;img src="https://soloalert.js.org/assets/soloalert.svg" alt="SoloAlert Logo" width="150px" height="150px"/&gt;';
+SoloAlert.alert({
+    title:"Title Here",
+    body:"Alert With A Custom Icon",
+    icon: "logo"
+});</div>
+            <div class="runnable-logs"></div>
+            <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
+          </div>
         <p>Displaying a Simple Prompt with heading and text.</p>
         <div class="runnable-code-container">
 
@@ -202,7 +214,7 @@
           <div class="runnable-code language-js">SoloAlert.alert({
   title:"Title Here",
   body:"Body Text With HTML",
-  html: `&lt;img src="https://arnav5544.github.io/arnav.png" alt="Arnav"&gt;`
+  html: `&lt;img src="https://soloalert.js.org/assets/soloalert.png" alt="SoloAlert Logo" width="150px"&gt;`
 });</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
@@ -229,10 +241,37 @@
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
   title:"Title Here",
-  body:"Do you want to cancel",
-  onOk: ()=>{alert("User Pressed Ok!")},
-  onCancel: ()=>{alert("User Canceled the Prompt!")}
-});</div>
+  body:"Enter a Number",
+  type: "number"
+}).then(value => {
+  SoloAlert.alert({
+    title: "Prompt Output",
+    body: "The Entered Number was " + value
+  })
+})</div>
+          <div class="runnable-logs"></div>
+          <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
+        </div>
+        <h3><code>attributes</code> property</h3>
+        <p><code>attributes</code> property sets the attributes to the input element in the prompt.</p>
+        <div class="runnable-code-container">
+          <div class="runnable-code language-js">SoloAlert.prompt({
+  title:"Title Here",
+  body:"Enter your Email",
+  attributes: {
+    type: "email",
+    title: "Your Email?",
+    "aria-label": "Your Email?",
+    id: "cat",
+    class: "meow",
+    placeholder: "Enter your Email",
+  }
+}).then(value => {
+  SoloAlert.alert({
+    title: "Prompt Output",
+    body: "The Entered Email was " + value
+  })
+})</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -353,6 +392,12 @@
               <td><code class="code">type</code></td>
               <td><code>String</code></td>
               <td>Sets the type of the input box shown in the prompt. all the HTML Input types are valid value for type.
+              </td>
+            </tr>
+            <tr>
+              <td><code class="code">attributes</code></td>
+              <td><code>Object</code></td>
+              <td>Sets the attribues to the input element in the prompt. It accepts an <code>Object</code> with the <code>keys</code> as attribute names and <code>values</code> as respective values.
               </td>
             </tr>
             <tr>
