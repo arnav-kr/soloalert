@@ -62,10 +62,10 @@
 <body>
   <header data-color-mode="dark" data-dark-theme="dark_dimmed">
     <nav>
-      <a href="#" target="_blank" class="brand-logo"><img src="../assets/soloalert.svg" alt="SoloAlert Logo"
+      <a href="#" target="_blank" class="brand-logo"><img src="./assets/soloalert.svg" alt="SoloAlert Logo"
           class="logo" preload width="40">SoloAlert<span class="brand-js">.js</span></a>
       <div id="github" style="position: fixed;right: 1rem; top: 1rem;"><a target="_blank"
-          href="https://github.com/arnav-kr/soloalert"><img src="../assets/github.svg" style="filter: invert(100%);"
+          href="https://github.com/arnav-kr/soloalert"><img src="./assets/github.svg" style="filter: invert(100%);"
             alt="GitHub" width="32px" height="32px"></a></div>
     </nav>
   </header>
@@ -93,19 +93,19 @@
           and body text.<br> Try runing it and see the alert.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-            title:"Title Here",
-            body:"Body Text.",
-            });</div>
+  title:"Title Here",
+  body:"Body Text.",
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying an alert with an Icon.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-            title:"Title Here",
-            body:"Alert With An Icon",
-            icon: "success"
-            });</div>
+  title:"Title Here",
+  body:"Alert With An Icon",
+  icon: "success"
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -116,78 +116,78 @@
         <div class="runnable-code-container">
 
           <div class="runnable-code language-js">SoloAlert.prompt({
-            title:"Title Here",
-            body:"Enter a Number",
-            type: "number"
-            });</div>
+  title:"Title Here",
+  body:"Enter a Number",
+  type: "number"
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying a Prompt Message and Getting the Entered Value.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-            title:"Title Here",
-            body:"Enter a Number",
-            type: "number"
-            }).then(value => {
-            SoloAlert.alert({
-            title: "Prompt Output",
-            body: "The Entered Number was " + value
-            })
-            })</div>
+  title:"Title Here",
+  body:"Enter a Number",
+  type: "number"
+}).then(value => {
+  SoloAlert.alert({
+    title: "Prompt Output",
+    body: "The Entered Number was " + value
+  })
+})</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying a Confirm Message.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.confirm({
-            title:"Title Here",
-            body:"Are you a Cat ?"
-            });</div>
+  title:"Title Here",
+  body:"Are you a Cat ?"
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying a Confirm Message. And getting User Choice</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.confirm({
-            title:"Title Here",
-            body:"Are you a Cat ?"
-            }).then(value => {
-            SoloAlert.alert({
-            title: "User Choice",
-            body: "You Choosed " + value
-            })
-            })</div>
+  title:"Title Here",
+  body:"Are you a Cat ?"
+}).then(value => {
+  SoloAlert.alert({
+    title: "User Choice",
+    body: "You Choosed " + value
+  })
+})</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying an Alert with a Light theme (default is <code>"auto"</code>)</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-            title:"Title Here",
-            body:"Light Theme.",
-            theme: "light"
-            })</div>
+  title:"Title Here",
+  body:"Light Theme.",
+  theme: "light"
+})</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying an Alert with a Dark theme (default is <code>"auto"</code>)</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-            title:"Title Here",
-            body:"Dark Theme.",
-            theme: "dark"
-            })</div>
+  title:"Title Here",
+  body:"Dark Theme.",
+  theme: "dark"
+})</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
         <p>Displaying an Alert with Transparency effect is (default is <code>false</code>)</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-            title:"Title Here",
-            body:"My Background is a bit transparent.",
-            useTransparency: true,
-            })</div>
+  title:"Title Here",
+  body:"My Background is a bit transparent.",
+  useTransparency: true,
+})</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -200,10 +200,10 @@
         <div class="runnable-code-container">
 
           <div class="runnable-code language-js">SoloAlert.alert({
-            title:"Title Here",
-            body:"Body Text With HTML",
-            html: `&lt;img src="https://arnav5544.github.io/arnav.png" alt="Arnav"&gt;`
-            });</div>
+  title:"Title Here",
+  body:"Body Text With HTML",
+  html: `&lt;img src="https://arnav5544.github.io/arnav.png" alt="Arnav"&gt;`
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -214,10 +214,10 @@
           One of its implementation could be playing audio when user clicks ok.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.alert({
-            title:"Title Here",
-            body:"Lets Begin The Journey",
-            onOk : ()=>{alert("Journey Begin!");}
-            });</div>
+  title:"Title Here",
+  body:"Lets Begin The Journey",
+  onOk : ()=>{alert("Journey Begin!");}
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -228,11 +228,11 @@
         <p><code>type</code> property sets the type of the input in the prompt.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-            title:"Title Here",
-            body:"Do you want to cancel",
-            onOk: ()=>{alert("User Pressed Ok!")},
-            onCancel: ()=>{alert("User Canceled the Prompt!")}
-            });</div>
+  title:"Title Here",
+  body:"Do you want to cancel",
+  onOk: ()=>{alert("User Pressed Ok!")},
+  onCancel: ()=>{alert("User Canceled the Prompt!")}
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -241,11 +241,11 @@
           cancel button.</p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-            title:"Title Here",
-            body:"Do you want to cancel",
-            onOk: ()=>{alert("User Pressed Ok!")},
-            onCancel: ()=>{alert("User Canceled the Prompt!")}
-            });</div>
+  title:"Title Here",
+  body:"Do you want to cancel",
+  onOk: ()=>{alert("User Pressed Ok!")},
+  onCancel: ()=>{alert("User Canceled the Prompt!")}
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -255,12 +255,12 @@
           something into the input. You can get the value of input by <code>event.target.value</code></p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-            title:"Title Here",
-            body:"Do you want to cancel",
-            onOk: ()=>{alert("User Pressed Ok!")},
-            onCancel: ()=>{alert("User Canceled the Prompt!")},
-            onInput: (e)=>{console.log("User Entered: " + e.target.value);}
-            });</div>
+  title:"Title Here",
+  body:"Do you want to cancel",
+  onOk: ()=>{alert("User Pressed Ok!")},
+  onCancel: ()=>{alert("User Canceled the Prompt!")},
+  onInput: (e)=>{console.log("User Entered: " + e.target.value);}
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -269,13 +269,13 @@
         </p>
         <div class="runnable-code-container">
           <div class="runnable-code language-js">SoloAlert.prompt({
-            title:"Title Here",
-            body:"Do you want to cancel",
-            textLimit: 200,
-            onOk: ()=>{alert("User Pressed Ok!")},
-            onCancel: ()=>{alert("User Canceled the Prompt!")},
-            onInput: (e)=>{console.log("User Entered: " + e.target.value);}
-            });</div>
+  title:"Title Here",
+  body:"Do you want to cancel",
+  textLimit: 200,
+  onOk: ()=>{alert("User Pressed Ok!")},
+  onCancel: ()=>{alert("User Canceled the Prompt!")},
+  onInput: (e)=>{console.log("User Entered: " + e.target.value);}
+});</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -469,11 +469,9 @@
         </p>
         <p>Example using SoloAlert as default Browser alert with a default <code>title</code> set to the alert.</p>
         <div class="runnable-code-container">
-          <div class="runnable-code language-js" data-color-mode="dark" data-dark-theme="dark_dimmed">
-            SoloAlert.setAsDefault();
-            SoloAlert.defaults.title = "Arnav Says";
-            alert("hi");
-          </div>
+          <div class="runnable-code language-js" data-color-mode="dark" data-dark-theme="dark_dimmed">SoloAlert.setAsDefault();
+SoloAlert.defaults.title = "Arnav Says";
+alert("hi");</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
@@ -484,14 +482,12 @@
         </p>
         <p>Example using <code>resetDefaults();</code></p>
         <div class="runnable-code-container">
-          <div class="runnable-code language-js" data-color-mode="dark" data-dark-theme="dark_dimmed">
-            SoloAlert.setAsDefault();
-            alert("I will Show soloalert alert", {title: "SoloAlert UI", icon: "success"});
-            //SoloAlert UI
-            SoloAlert.resetDefaults();
-            alert("I will show browser alert UI");
-            //browser UI
-          </div>
+          <div class="runnable-code language-js" data-color-mode="dark" data-dark-theme="dark_dimmed">SoloAlert.setAsDefault();
+alert("I will Show soloalert alert", {title: "SoloAlert UI", icon: "success"});
+//SoloAlert UI
+SoloAlert.resetDefaults();
+alert("I will show browser alert UI");
+//browser UI</div>
           <div class="runnable-logs"></div>
           <button class="runnable-code-btn btn btn-primary btn-medium">Run</button>
         </div>
